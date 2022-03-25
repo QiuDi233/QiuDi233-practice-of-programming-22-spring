@@ -1,5 +1,5 @@
-/*ÃèÊö
-×Ô¼º±àĞ´Ò»¸öÄÜ¶ÔÈÎºÎÀàĞÍµÄÊı×é½øĞĞÅÅĞòµÄmysortº¯ÊıÄ£°æ¡£Ö»ÄÜĞ´Ò»¸ömysortÄ£°å£¬²»ÄÜĞ´mysortº¯Êı£¡
+/*æè¿°
+è‡ªå·±ç¼–å†™ä¸€ä¸ªèƒ½å¯¹ä»»ä½•ç±»å‹çš„æ•°ç»„è¿›è¡Œæ’åºçš„mysortå‡½æ•°æ¨¡ç‰ˆã€‚åªèƒ½å†™ä¸€ä¸ªmysortæ¨¡æ¿ï¼Œä¸èƒ½å†™mysortå‡½æ•°ï¼
 
 #include <iostream>
 using namespace std;
@@ -19,34 +19,34 @@ bool Greater3(double d1,double d2)
 
 template <class T1,class T2>
 void mysort(
-// ÔÚ´Ë´¦²¹³äÄãµÄ´úÂë
+// åœ¨æ­¤å¤„è¡¥å……ä½ çš„ä»£ç 
 #define NUM 5
 int main()
 {
     int an[NUM] = { 8,123,11,10,4 };
-    mysort(an,an+NUM,Greater1); //´ÓĞ¡µ½´óÅÅĞò 
+    mysort(an,an+NUM,Greater1); //ä»å°åˆ°å¤§æ’åº 
     for( int i = 0;i < NUM; i ++ )
        cout << an[i] << ",";
-    mysort(an,an+NUM,Greater2); //´Ó´óµ½Ğ¡ÅÅĞò 
+    mysort(an,an+NUM,Greater2); //ä»å¤§åˆ°å°æ’åº 
     cout << endl;
     for( int i = 0;i < NUM; i ++ )
         cout << an[i] << ","; 
     cout << endl;
     double d[6] = { 1.4,1.8,3.2,1.2,3.1,2.1};
-    mysort(d+1,d+5,Greater3); //½«Êı×é´ÓÏÂ±ê1µ½ÏÂ±ê4´ÓĞ¡µ½´óÅÅĞò 
+    mysort(d+1,d+5,Greater3); //å°†æ•°ç»„ä»ä¸‹æ ‡1åˆ°ä¸‹æ ‡4ä»å°åˆ°å¤§æ’åº 
     for( int i = 0;i < 6; i ++ )
          cout << d[i] << ","; 
 	return 0;
 }
-ÊäÈë
-ÎŞ
-Êä³ö
+è¾“å…¥
+æ— 
+è¾“å‡º
 4,8,10,11,123,
 123,11,10,8,4,
 1.4,1.2,1.8,3.1,3.2,2.1,
-ÑùÀıÊäÈë
-ÎŞ
-ÑùÀıÊä³ö
+æ ·ä¾‹è¾“å…¥
+æ— 
+æ ·ä¾‹è¾“å‡º
 4,8,10,11,123,
 123,11,10,8,4,
 1.4,1.2,1.8,3.1,3.2,2.1,*/
@@ -68,7 +68,7 @@ bool Greater3(double d1, double d2)
 }
 
 template <class T1, class T2>
-void mysort(T1* start, T1* end, bool f(T2 t1, T2 t2)) {
+void mysort(T1* start, T1* end, bool f(T2 t1, T2 t2)) {//æˆ‘ç”¨çš„å†’æ³¡æ’åº
 	T1 tmp = *start;
 	for (T1* i = start; i < end; ++i) {
 		for (T1* j = start; j < end - 1; ++j) {
@@ -84,16 +84,16 @@ void mysort(T1* start, T1* end, bool f(T2 t1, T2 t2)) {
 int main()
 {
 	int an[NUM] = { 8,123,11,10,4 };
-	mysort(an, an + NUM, Greater1); //´ÓĞ¡µ½´óÅÅĞò 
+	mysort(an, an + NUM, Greater1); //ä»å°åˆ°å¤§æ’åº 
 	for (int i = 0; i < NUM; i++)
 		cout << an[i] << ",";
-	mysort(an, an + NUM, Greater2); //´Ó´óµ½Ğ¡ÅÅĞò 
+	mysort(an, an + NUM, Greater2); //ä»å¤§åˆ°å°æ’åº 
 	cout << endl;
 	for (int i = 0; i < NUM; i++)
 		cout << an[i] << ",";
 	cout << endl;
 	double d[6] = { 1.4,1.8,3.2,1.2,3.1,2.1 };
-	mysort(d + 1, d + 5, Greater3); //½«Êı×é´ÓÏÂ±ê1µ½ÏÂ±ê4´ÓĞ¡µ½´óÅÅĞò 
+	mysort(d + 1, d + 5, Greater3); //å°†æ•°ç»„ä»ä¸‹æ ‡1åˆ°ä¸‹æ ‡4ä»å°åˆ°å¤§æ’åº 
 	for (int i = 0; i < 6; i++)
 		cout << d[i] << ",";
 	return 0;

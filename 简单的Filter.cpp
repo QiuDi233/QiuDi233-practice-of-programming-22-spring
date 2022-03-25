@@ -43,7 +43,7 @@ MikeJackLucy
 #include <iostream>
 #include <string>
 using namespace std;
-// ÔÚ´Ë´¦²¹³äÄãµÄ´úÂë
+// 在此处补充你的代码
 template<class T1>
 T1* Filter(T1*start,T1*end,T1*dst,bool f(T1 t)){
 	int p=0;

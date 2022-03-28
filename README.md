@@ -14,3 +14,8 @@ void operator()(T* start, T* end, T* aim) {
 		}
 		
 }
+
+### 按距离排序
+要写复制构造函数
+
+要重载括号

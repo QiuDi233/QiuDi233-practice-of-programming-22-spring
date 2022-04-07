@@ -64,8 +64,9 @@ class myostream_iteraotr
 	string str;
 public:
 	myostream_iteraotr(ostream&output,string s):os(output),str(s){	}
-	ostream& operator=(T t){//重载赋值号 
+	ostream& operator = (const T& t){//重载赋值号 
 		os<<t<<str;
+		return os;
 	}
 	void operator++(){
 		//重载前置++ 使其什么都不干 

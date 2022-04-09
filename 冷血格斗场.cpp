@@ -3,33 +3,33 @@
 #include<fstream>
 using namespace std;
 int main() {
-	//ÊµÁ¦Öµ¿ÉÒÔÏàÍ¬ ÄÇ¼ÓÈëÖ®ºóÈç¹ûÓĞÊµÁ¦ÖµÏàÍ¬µÄ¾Í°Ñid´óµÄ²»¼Ó½øÈ¥
+	//å®åŠ›å€¼å¯ä»¥ç›¸åŒ é‚£åŠ å…¥ä¹‹åå¦‚æœæœ‰å®åŠ›å€¼ç›¸åŒçš„å°±æŠŠidå¤§çš„ä¸åŠ è¿›å»
 	ofstream fout("1.txt");
-	map<int, int>club;//ÊµÁ¦ id
+	map<int, int>club;//å®åŠ› id
 	int n = 0;
 	cin >> n;
 	int id = 0, force = 0;
 	club.insert(pair<int, int>(1000000000, 1));
 	while (n--) {
 		cin >> id >> force;
-		if (club.count(force)==1) {//Èç¹ûÒÑ¾­ÓĞÁËÕâ¸öÊµÁ¦µÄ
+		if (club.count(force)==1) {//å¦‚æœå·²ç»æœ‰äº†è¿™ä¸ªå®åŠ›çš„
 			map<int, int>::iterator it;
 			it = club.find(force);
 			cout << id << " " << it->second << endl;
-			//È»ºóid´óµÄ²»¼Ó½øÈ¥
+			//ç„¶åidå¤§çš„ä¸åŠ è¿›å»
 		}
 		else {
-			//Èç¹û»¹Ã»ÓĞÕâ¸öÊµÁ¦µÄ
+			//å¦‚æœè¿˜æ²¡æœ‰è¿™ä¸ªå®åŠ›çš„
 			club.insert(pair<int, int>(force, id));
 			map<int, int>::iterator it, pre, last;
 			it = club.find(force);
 			pre = last = it;
 			pre--;
 			last++;
-			if (it == club.begin()) {//×îÈõ
+			if (it == club.begin()) {//æœ€å¼±
 				cout << id << " " << last->second << endl;
 			}
-			else if (last == club.end()) {//×îÇ¿
+			else if (last == club.end()) {//æœ€å¼º
 				cout << id << " " << pre->second << endl;
 			}
 			else {
@@ -41,7 +41,7 @@ int main() {
 				}
 				if (it->first - pre->first == last->first - it->first) {
 					if (pre->second < last->second) {
-						cout << id << " " << pre->second << endl;//´òidĞ¡µÄ
+						cout << id << " " << pre->second << endl;//æ‰“idå°çš„
 					}
 					else {
 						cout << id << " " << last->second << endl;

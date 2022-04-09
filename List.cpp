@@ -1,16 +1,16 @@
-/*ÃèÊö
-Ð´Ò»¸ö³ÌÐòÍê³ÉÒÔÏÂÃüÁî£º
-new id ¡ª¡ªÐÂ½¨Ò»¸öÖ¸¶¨±àºÅÎªidµÄÐòÁÐ(id < 10000)
-add id num¡ª¡ªÏò±àºÅÎªidµÄÐòÁÐ¼ÓÈëÕûÊý
-num merge id1 id2¡ª¡ªÈç¹ûid1µÈÓÚid2,²»×öÈÎºÎÊÂ£¬·ñÔò¹é²¢ÐòÁÐid1ºÍid2ÖÐµÄÊý£¬²¢½«id2Çå¿Õ
-unique id¡ª¡ªÈ¥µôÐòÁÐidÖÐÖØ¸´µÄÔªËØ
-out id ¡ª¡ª´ÓÐ¡µ½´óÊä³ö±àºÅÎªidµÄÐòÁÐÖÐµÄÔªËØ£¬ÒÔ¿Õ¸ñ¸ô¿ª
+/*æè¿°
+å†™ä¸€ä¸ªç¨‹åºå®Œæˆä»¥ä¸‹å‘½ä»¤ï¼š
+new id â€”â€”æ–°å»ºä¸€ä¸ªæŒ‡å®šç¼–å·ä¸ºidçš„åºåˆ—(id < 10000)
+add id numâ€”â€”å‘ç¼–å·ä¸ºidçš„åºåˆ—åŠ å…¥æ•´æ•°
+num merge id1 id2â€”â€”å¦‚æžœid1ç­‰äºŽid2,ä¸åšä»»ä½•äº‹ï¼Œå¦åˆ™å½’å¹¶åºåˆ—id1å’Œid2ä¸­çš„æ•°ï¼Œå¹¶å°†id2æ¸…ç©º
+unique idâ€”â€”åŽ»æŽ‰åºåˆ—idä¸­é‡å¤çš„å…ƒç´ 
+out id â€”â€”ä»Žå°åˆ°å¤§è¾“å‡ºç¼–å·ä¸ºidçš„åºåˆ—ä¸­çš„å…ƒç´ ï¼Œä»¥ç©ºæ ¼éš”å¼€
 
-ÊäÈë
-µÚÒ»ÐÐÒ»¸öÊýn£¬±íÊ¾ÓÐ¶àÉÙ¸öÃüÁî( n£¼£½£²£°£°£°£°£°)¡£ÒÔºónÐÐÃ¿ÐÐÒ»¸öÃüÁî¡£
-Êä³ö
-°´ÌâÄ¿ÒªÇóÊä³ö¡£
-ÑùÀýÊäÈë
+è¾“å…¥
+ç¬¬ä¸€è¡Œä¸€ä¸ªæ•°nï¼Œè¡¨ç¤ºæœ‰å¤šå°‘ä¸ªå‘½ä»¤( nï¼œï¼ï¼’ï¼ï¼ï¼ï¼ï¼)ã€‚ä»¥åŽnè¡Œæ¯è¡Œä¸€ä¸ªå‘½ä»¤ã€‚
+è¾“å‡º
+æŒ‰é¢˜ç›®è¦æ±‚è¾“å‡ºã€‚
+æ ·ä¾‹è¾“å…¥
 16
 new 1
 new 2
@@ -28,7 +28,7 @@ out 1
 out 2
 unique 1
 out 1
-ÑùÀýÊä³ö
+æ ·ä¾‹è¾“å‡º
 1 2 3 
 1 2 3 4
 1 1 2 2 3 3 4

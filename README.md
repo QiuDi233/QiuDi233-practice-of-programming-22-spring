@@ -19,7 +19,7 @@
 
 ### 高阶函数Combine
 
-    也可以这样做
+也可以这样做
     
     #include <functional>
     

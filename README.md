@@ -4,6 +4,8 @@
 
 ### 高阶函数F(x)
 
+    #include <functional>
+    
     template<typename T1, typename T2>
 
     auto f(T1 x) -> function<T2(T2)> {

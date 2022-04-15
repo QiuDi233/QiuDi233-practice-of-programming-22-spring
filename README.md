@@ -16,3 +16,17 @@
 
 这是我在网上找到的另一个答案，我觉得这样写应该才是它的出题意图。
 不过我写的那样也AC了（doge）。
+
+### 高阶函数Combine
+
+    也可以这样做
+    
+    #include <functional>
+    
+    template<typename T1, typename T2, typename T3>
+    
+    auto combine(T1 f1, T2 f2) -> function<double(double)> {
+    
+        return [&](T3 x){return f1(f1(x) + f2(x));};
+        
+    }
